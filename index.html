@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Список пользователей</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Список пользователей</h1>
+        <div class="search-bar">
+            <input type="text" id="search" placeholder="Поиск по имени или e-mail">
+            <button id="clear-filters"><img src="img/clean.png" alt="">Очистить фильтр</button>
+        </div>
+        <div class="sort-buttons">
+            <p>Сортировка:</p>
+            <button id="sort-registration-date">Дата регистрации</button>
+            <button id="sort-rating">Рейтинг</button>
+        </div>
+        <table id="user-table">
+            <thead>
+                <tr>
+                    <th>Имя пользователя</th>
+                    <th>E-mail</th>
+                    <th>Дата регистрации</th>
+                    <th>Рейтинг</th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+            <!-- Строки с пользователями будут добавлены динамически -->
+            </tbody>
+        </table>
+        <div class="pagination">
+            <!-- Кнопки пагинации будут добавлены динамически -->
+        </div>
+    </div>
+
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <p>Вы уверены, что хотите удалить пользователя?</p>
+            <button id="confirm-delete">Да</button>
+            <button id="cancel-delete">Нет</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

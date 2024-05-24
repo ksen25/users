@@ -1,0 +1,177 @@
+body {
+    font-family: 'Inter', sans-serif;
+    margin: 0;
+    padding: 0;
+    justify-content: center;
+    align-items: center;
+    background-color: #F7F7F7;
+}
+h1 {
+    font-size: 24px;
+    line-height: 28px;
+    font-weight: 700;
+}
+p {
+    font-size: 12px;
+}
+.container {
+    padding: 20px;
+    border-radius: 8px;
+}
+.search-bar {
+    margin: 20px 0;
+    position: relative;
+    background-color: #FFFFFF;
+    padding: 12px 44px 16px 16px;
+    border-radius: 10px;
+    box-shadow: 0px 18px 15px 0px #94949426;
+}
+#search {
+    width: 95%;
+    height: 34px;
+    border-radius: 4px;
+    background: #ECEFF0 url('img/search.png') no-repeat 10px center;
+    background-size: 20px;
+    border: none;
+    padding: 0 10px 0 40px;
+    box-sizing: border-box;
+}
+.delete-btn {
+    cursor: pointer;
+    background: transparent;
+    border: none;
+}
+#clear-filters {
+    background-color: white;
+    border: none;
+    cursor: pointer;
+    margin-top: 24px;
+    padding: 0;
+    color: #4F4F4F;
+    font-weight: 500;
+    font-size: 12px;
+}
+#clear-filters img {
+    vertical-align: middle;
+}
+.sort-buttons {
+    margin-bottom: 16px;
+    display: flex;
+}
+.sort-buttons p{
+    color:#9EAAB4;
+    font-size: 10px;
+}
+.sort-buttons button {
+    border: none;
+    font-size: 10px;
+    text-decoration: underline;
+    text-decoration-style: dashed;
+    background-color: transparent;
+    cursor: pointer;
+    padding: 8px 12px;
+    margin-right: 10px;
+    color:#9EAAB4;
+}
+
+.sort-buttons button.active {
+    color: black;
+}
+
+.search-background {
+    width: 961px;
+    height: 102px;
+    position: absolute;
+    top: 60px;
+    left: 27px;
+    border-radius: 7px 0 0 0;
+    background: #FFFFFF;
+    box-shadow: 0px 18px 15px 0px #94949426;
+    z-index: -1;
+}
+
+table {
+    width: 100%;
+    border-radius: 10px;
+    padding: 16px;
+    margin-bottom: 20px;
+    background-color: #FFFFFF;
+}
+
+td {
+    padding: 12px 0;
+    font-size: 12px;
+    text-align: left;
+    color: #ACACAC;
+}
+
+th {
+    color: #9EAAB4;
+    text-align: left;
+    font-size: 10px;
+}
+
+.pagination {
+    text-align: center;
+}
+
+.pagination button {
+    padding: 10px 20px;
+    margin: 0 5px;
+    border: none;
+    background-color: #0CB4F1;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.pagination button:disabled,
+.pagination button.active {
+    background-color: #ccc;
+}
+
+#confirm-delete {
+    cursor: pointer;
+    width: 88px;
+    height: 27px;
+    padding: 6px 36px 6px 36px;
+    border: none;
+    border-radius: 3px;
+    background: #E0E0E0;
+    color: #828282;
+    margin-right: 36px;
+}
+
+#cancel-delete {
+    cursor: pointer;
+    color: white;
+    width: 95px;
+    height: 27px;
+    padding: 6px 36px 6px 36px;
+    border: none;
+    border-radius: 3px;
+    background: #0CB4F1;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+}
+
+td:nth-child(1) {
+    color: #0CB4F1;
+}
